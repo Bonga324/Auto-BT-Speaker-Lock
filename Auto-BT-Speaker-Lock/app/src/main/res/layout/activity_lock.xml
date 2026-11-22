@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#10141D" android:orientation="vertical" android:gravity="center"
+    android:padding="28dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="🔐 Auto BT Speaker Lock" android:textColor="#FFFFFF" android:textSize="27sp" />
+    <TextView android:id="@+id/lockMessage" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Enter your 4-digit app PIN" android:textColor="#B7C7DA" android:textSize="18sp"
+        android:gravity="center" android:layout_marginTop="20dp" />
+    <EditText android:id="@+id/pinInput" android:layout_width="280dp" android:layout_height="wrap_content"
+        android:inputType="numberPassword" android:maxLength="4" android:hint="PIN"
+        android:textColor="#FFFFFF" android:textColorHint="#9CAABD" android:textSize="24sp"
+        android:gravity="center" android:layout_marginTop="18dp" />
+    <Button android:id="@+id/unlockButton" android:layout_width="280dp" android:layout_height="60dp"
+        android:text="UNLOCK APP" android:layout_marginTop="16dp" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#10141D" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="22dp" android:orientation="vertical">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="AUTO BT SPEAKER LOCK" android:textSize="26sp" android:textStyle="bold" android:textColor="#FFFFFF" />
+        <TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Checking connection…" android:textSize="21sp" android:textColor="#77D7AD" android:layout_marginTop="18dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="My Device: Hisense HS2000 - F8:1B:04:AF:1F:59" android:textSize="17sp"
+            android:textColor="#C7D6E9" android:layout_marginTop="12dp" />
+        <TextView android:id="@+id/lockBanner" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="🔒 LOCK MODE ON - Owner reconnect enabled (not exclusive Bluetooth control)"
+            android:background="#9C2525" android:padding="14dp" android:textSize="18sp" android:textColor="#FFFFFF"
+            android:visibility="gone" android:layout_marginTop="16dp" />
+        <Button android:id="@+id/connectButton" android:layout_width="match_parent" android:layout_height="68dp"
+            android:text="CONNECT TO MY HISENSE HS2000" android:layout_marginTop="22dp" />
+        <Button android:id="@+id/disconnectButton" android:layout_width="match_parent" android:layout_height="60dp"
+            android:text="DISCONNECT" />
+        <Switch android:id="@+id/lockSwitch" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="LOCK HISENSE HS2000 - Reconnect Mode" android:textSize="18sp" android:textColor="#FFFFFF"
+            android:padding="12dp" />
+        <Button android:id="@+id/scanButton" android:layout_width="match_parent" android:layout_height="60dp"
+            android:text="SCAN FOR OTHER DEVICES" />
+        <Button android:id="@+id/settingsButton" android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="ADMIN SETTINGS / RESET" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Nearby Bluetooth devices" android:textColor="#FFFFFF" android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+        <ListView android:id="@+id/deviceList" android:layout_width="match_parent" android:layout_height="240dp"
+            android:background="#1A2331" />
+        <TextView android:id="@+id/infoText" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="A2DP auto-connect uses a restricted Android API and may be blocked. Other devices and system settings cannot be locked by this app."
+            android:textColor="#B7C7DA" android:textSize="14sp" android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
